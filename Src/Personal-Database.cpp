@@ -27,11 +27,7 @@ const std::string menuOpts =
 const char *filePathPTR = "D:/Big Project Coding/Personal-Database/compiled/data/database.db";
 
 
-
-
-
 // CRYPTOGRAHPY
-
 // encdec class with encrypt() and
 // decrypt() member functions
 class encdec {
@@ -100,9 +96,6 @@ void encdec::decrypt()
 }
 
 
-
-
-
 // Functions
 
 void Protocol_wipeData() {
@@ -115,6 +108,7 @@ void Protocol_setup() {
   struct stat sb;
   
   if (mkdir("D:/Big Project Coding/Personal-Database/compiled/data", 0777)== -1) {
+    mkdir("D:", 0777);
     mkdir("D:/Big Project Coding", 0777);
     mkdir("D:/Big Project Coding/Personal-Database", 0777);
     mkdir("D:/Big Project Coding/Personal-Database/compiled", 0777);
